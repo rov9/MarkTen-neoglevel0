@@ -1,135 +1,96 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap');
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-}
-
 :root {
   --primary-color: #818CF8;
+  
 }
 
-body {
+
+*{
+  box-sizing: border-box;
+
+}
+body{
   font-family: 'Hind Madurai', sans-serif;
-  min-width: 100vw;
   background-color: #F0F9FF;
 }
 
-/* Container */
-.container {
-  margin: 4rem auto 7rem;
-  text-align: center;
-}
-
 .heading {
-  color: 
+color: 
   #94A3B8;
-  
+text-align: center;
 }
 
 .heading .span{
-color:#FBBF24;
-
-}
-
-.description {
-  font-size: larger;
-  margin: 1rem;
-  font-family: 'Baloo Thambi 2', cursive;
-}
-
-.input-label {
-  display: block;
-  font-size: large;
-  font-weight: 600;
+  color:#FBBF24;
   
+  }
+
+.description
+{
+text-align: center;
+
 }
 
-.input {
-  font-size: 14px;
-  outline: #fff;
-  padding: 0.6rem 1rem;
-  margin: 1rem;
-  border: 2px solid var(--primary-color);
-  border-radius: 0.5rem;
+.input-label{
+  display: block;
+  text-align: center;
+}
+
+.input{
+  display: block;
+}
+
+.btn{
+background: var(#818CF8);
+
+width: 15%; 
+border-radius: 0.5rem;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+
+.change-table th,td
+{
+  border: 1px solid black;
+}
+
+.change-table table {
+  border: 0px solid black;
   width: 100%;
-  max-width: 121px;
-}
-
-#check-button {
-  background: var(--primary-color);
-  border: none;
-  color: #fff;
-  padding: 0.7rem 1rem;
-  border-radius: 0.5rem;
-  font-size: large;
-  cursor: pointer;
-  outline: #fff;
-  margin: auto;
-  display: block;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-
-#error-message {
-  display: block;
-  font-size: larger;
-  margin: 1rem 0 0;
-}
-
-/* Table */
-.change-table {
-  width: 50%;
-  text-align: justify;
   border-collapse: collapse;
-  margin: auto;
+  table-layout: fixed;
 }
 
-.change-table caption {
-  margin: 1rem auto;
-  font-size: x-large;
-  font-weight: 500;
-}
 
-th,
-td {
-  border: 2px solid var(--primary-color);
-  width: 0%;
-  border-collapse: collapse;
-  padding: 0.4rem;
-}
-
-/* footer */
-
-footer {
-  margin-bottom: -12rem;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-footer p {
-  font-size: large;
-  text-align: center;
-}
-
-.footer-list {
-  margin: 1rem;
-}
-
-a,
-img,
-li {
+.list-item-inline{
   display: inline;
 }
 
-img {
-  width: 40px;
-  padding: 0.2rem;
+@media only screen and (max-width: 700px){
+section {
+  width: 80%;
+  margin: auto;
+}}
+
+section input {
+  width: 30%;
+  height: 2rem;
+  color: black;
+}
+
+section {
+  background-color: var(--dark-green);
+  width: 50%;
+  /* max-width: 90%; */
+  margin: auto;
+  text-align: center;
+}
+
+section button{
+  width: 20%;
+  height: 2.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: var(--light-green);
+  color: black;
 }
