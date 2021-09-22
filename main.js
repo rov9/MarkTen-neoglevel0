@@ -12,10 +12,14 @@ checkButton.addEventListener("click",function validateBillAndCashAmount()
 
     if(billAmount.value>0)
     {
-        if (cashGiven.value >= billAmount.value) {
+        if (cashGiven.value > billAmount.value) {
 
             var amountToBeReturned = cashGiven.value - billAmount.value;
             calculateChange(amountToBeReturned);
+    }
+    else if(cashGiven.value == billAmount.value)
+    {
+      showMessage("Thanks,No changes to return!");
     }
     else{
         showMessage("Please provide bill amount else will you wash plates?");
